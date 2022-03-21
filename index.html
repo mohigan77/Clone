@@ -30,21 +30,77 @@
 
     <meta name="description" content="네이버 메인에서 어쩌구 저쩌구">
     <!-- 웹페이지에 대한 설명 지정, 검색엔진은 이 설명을 선택하여 검색 결과로 표시 가능 -->
-
     <meta property="og:title" content="네이버">
     <meta property="og:url" content="https://www.naver.com/">
     <meta property="og:image" content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png">
+    <meta property="og:descryption" content="네이버 메인에서 어쩌구 저쩌구">
     <!-- 오픈그래프 태그 = 사이트가 소셜미디로 공유될때 우선적으로 활용되는 정보 -->
-    
+
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="NAVER">
+    <meta name="twitter:title" content"NAVER">
     <meta name="twitter:url" content="https://www.naver.com/">
     <meta name="twitter:image" content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png">
     <meta name="twitter:descryption" content="네이버 메인에서 어쩌구 저쩌구">
+    <!-- 트위터에서 활용되는 정보 -->
+
+    <!-- <link rel="stylesheet" href="https://pm.pstatic.net/dist/css/nmain.20220317.css"> -->
+    <!-- 네이버 웹사이트 디자인 css파일인듯 -->
+    <!-- .blind
+    { position:absolute;
+    clip:rect(0 0 0 0);
+    width:1px; height:1px; margin:-1px;
+    overflow:hidden} -->
+    <!-- position = absolute(default = static)
+    static = 요소를 일반적인 문서 흐름에 따라 배치
+    relative = 요소를 일반적인 문서 흐름에 따라 배치하되 자기 자신을 기준으로 top, right, bottom, left 의 값에 따라 오프셋 적용
+    absolute = 요소를 일반적인 문서 흐름에서 제거하고, 가장 가까운 부모 요소에대해 상대적으로 배치한다.(독립한다)
+    fixed = 요소를 일반적인 문서 흐름에서 제거하고, 뷰포트(웹페이지가 사용자에게 보여지는 영역)을 기준으로 배치 (Ex: 인터넷 광고들)
+    sticky = 요소를 일반적인 문서 흐름에 따라 배치하고, 항상 쌓임 맥락을 생성, 끈끈한 동작을 보임-->
+<style>
+  main {
+    width: 300px;
+    height: 120px;
+    overflow: auto;
+    background: tomato;
+  }
+
+  div {
+    width: 200px;
+    height: 100px;
+    border: 1px solid;
+    background: yellow;
+    text-align: center;
+    line-height: 100px;
+    box-sizing: border-box;
+  }
+
+  div:nth-of-type(2) {
+    position: sticky;
+    top: 0;
+    background: cyan;
+    opacity: 0.8;
+  }
+</style>
+    <link rel="stylesheet" href="https://ssl.pstatic.net/sstatic/search/pc/css/sp_autocomplete_210318.css">
+    <!-- ??? -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+    <!-- 탭 옆에 있는 이미지 아이콘 설정 -->
+
+
+    <link rel="apple-touch-icon" sizes="114x114" href="https://s.pstatic.net/static/www/u/2014/0328/mma_204243574.png">
+    <!-- 114×114 이미지로 만들어두면 아이폰에서 자동으로 크기 리사이즈 -->
+    <link rel="apple-touch-icon" href="https://s.pstatic.net/static/www/u/2014/0328/mma_20432863.png">
+    <!-- Apple이 미적 부분을 수행하기를 원하면 (광택을 추가) 위의 태그들을 추가 -->
 
   </head>
   <body>
-    <h1>NAVER clone
-    </h1>
+    <h1>NAVER clone</h1>
+<br>
+    <main>
+      <div>position: static;</div>
+      <div>position: sticky;</div>
+      <div>position: static;</div>
+    </main>
+
   </body>
 </html>
